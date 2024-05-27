@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--help to use all icons present in font awsome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <!--spotify logo-->
+    <link rel="icon" href="assets/logo.png" />
+
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="main">
+        <!--all div are inside this main div basically 3 divs given below-->
+        <div class="sidebar">
+            <!--so our sidebar have two divs nav and library-->
+            <div class="nav">
+                <!--navbar also have two div for home and search-->
+                <div class="nav_option" style="opacity: 1">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib_option nav_option">
+                        <img src="./assets/library_icon.png" alt="library img " />
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib_boxes">
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assets/backward_icon.png" alt="img" />
+                    <img src="./assets/forward_icon.png" class="hide" alt="img" />
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item">Explore Premium</button>
+
+                    <button class="badge nav-item dark-badge">
+                        <i class="fa-regular fa-circle-down nav-item" style="margin-right: 5px"></i>Install App
+                    </button>
+
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img" />
+                    <p class="card-title">Top 50-Global</p>
+                    <p class="card-info">
+                        Your daily updates of the most played tracks...
+                    </p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img" />
+                    <p class="card-title">Rythm Boys</p>
+                    <p class="card-info">
+                        Listen to music by The Delta Rhythm Boys on spotify Music...
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img" />
+                    <p class="card-title">Rahat Fateh Ali Khan</p>
+                    <p class="card-info">
+                        Enjoy music from one of the greatest of all time.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img" />
+                    <p class="card-title">Theri Top songs</p>
+                    <p class="card-info">
+                        This track is soulful, beautiful and the Sanskrit slokas...
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5UZQgzF_S3tR5HEWxXk3Sb7p4juifH_XflA&s"
+                        class="card-img" />
+                    <p class="card-title">Triggered Insaan</p>
+                    <p class="card-info">
+                        True Story Bro! with Triggered Insaan | Podcast on Spotify
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img" />
+                    <p class="card-title">Top 50 Horror Shows</p>
+                    <p class="card-info">
+                        Spooky Stories. The creepiest, scariest horror stories for you!
+                        Spotify.
+                    </p>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img" />
+                    <p class="card-title">Top Songs Global</p>
+                    <p class="card-info">
+                        Your daily updates of the most played global tracks...
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img" />
+                    <p class="card-title">Top Indian Songs</p>
+                    <p class="card-info">
+                        Your daily updates of the most played Indian tracks...
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img" />
+                    <p class="card-title">Top 50 Horror Shows</p>
+                    <p class="card-info">
+                        Spooky Stories. The creepiest, scariest horror stories for you!
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        
+        
+        <div class="music-player">
+            <div class="album">
+                <img src="./Homework Assets/album_picture.jpeg">
+                <div class="name1">
+                <p class="name">Cheques</p>
+                <p class="name2">Shubh</p>
+                </div>
+                
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon" />
+                    <img src="./assets/player_icon2.png" class="player-control-icon" />
+                    <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity:1; height: 2rem;"/>
+                    <img src="./assets/player_icon4.png" class="player-control-icon" />
+                    <img src="./assets/player_icon5.png" class="player-control-icon" />
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1" />
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="./Homework Assets/controls_icon1.png">
+                
+                <img src="./Homework Assets/controld_icon2.png">
+                
+                
+                <img src="./Homework Assets/controls_icon5.png">
+
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
